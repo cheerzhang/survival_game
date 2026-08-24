@@ -23,6 +23,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Stamp deploy version
+        run: sed -i "s/__BUILD_VERSION__/${GITHUB_SHA}/g" sw.js
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
