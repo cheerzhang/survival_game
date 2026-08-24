@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no" />
+  <meta name="theme-color" content="#0b1712" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>荒岛余生</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">✦</span><div><b>荒岛余生</b><small id="dayLabel">春 · 第 1 天 · 晴朗</small></div></div>
+      <div class="stats">
+        <div class="stat"><span>❤</span><i><em id="healthBar"></em></i><b id="healthText">100</b></div>
+        <div class="stat hunger"><span>◆</span><i><em id="hungerBar"></em></i><b id="hungerText">80</b></div>
+      </div>
+    </header>
+
+    <section class="game-shell">
+      <canvas id="game" aria-label="生存游戏地图"></canvas>
+      <button id="bagButton" class="side-button"><span>▣</span><b>背包</b><small id="bagCount">0 / 12</small></button>
+      <button id="aiButton" class="ai-button"><span>◉</span><b>AI 自动</b><small>关闭</small></button>
+      <button id="logButton" class="log-button local-only"><span>≡</span><b>测试日志</b></button>
+      <div id="hint" class="hint">点击一个地面格子开始移动</div>
+      <div id="toast" class="toast"></div>
+      <div id="actionPrompt" class="action-prompt hidden">
+        <div><span id="actionIcon">✦</span><p><b id="actionTitle">拾取</b><small id="actionText"></small></p></div>
+        <button id="actionButton">拾取</button>
+      </div>
+    </section>
+
+    <footer class="quickbar">
+      <button class="quick active" data-slot="hand"><span>🗡</span><small>攻击</small></button>
+      <button class="quick locked" data-slot="rod"><span>🎣</span><small>鱼竿</small></button>
+      <button class="quick locked" data-slot="trap"><span>⌗</span><small>陷阱</small></button>
+      <button class="quick locked" data-slot="fence"><span>▥</span><small>围栏</small></button>
+    </footer>
+  </main>
+
+  <div id="scrim" class="scrim"></div>
+  <aside id="bag" class="bag" aria-hidden="true">
+    <div class="handle"></div>
+    <div class="bag-head"><div><small>生存装备</small><h2>背包</h2></div><button id="closeBag">×</button></div>
+    <nav class="tabs"><button class="active" data-tab="items">物资</button><button data-tab="craft">制作 <span id="craftBadge">2</span></button></nav>
+    <div id="itemsPanel" class="panel"></div>
+    <div id="craftPanel" class="panel hidden"></div>
+  </aside>
+  <aside id="logPanel" class="log-panel local-only">
+    <header><div><small>自动测试</small><b>AI 生存日志</b></div><button id="closeLog">×</button></header>
+    <div class="log-summary"><span id="logDay">第 1 天</span><span id="logState">健康 100 · 饥饿 80</span></div>
+    <div class="log-actions"><button id="runTenButton">▶ 连续测试 10 局</button><button id="clearHistoryButton">清空历史</button></div>
+    <div id="runSummary" class="run-summary">尚无历史测试结果</div>
+    <div id="strategyReview" class="strategy-review hidden">
+      <b>策略迭代建议</b>
+      <div id="resultTable"></div>
+      <div id="strategyDiff"></div>
+      <button id="applyStrategyButton">应用推荐策略并更新文件</button>
+      <small id="strategyStatus"></small>
+    </div>
+    <div id="logEntries" class="log-entries"></div>
+  </aside>
+
+  <div id="welcome" class="modal-wrap">
+    <section class="modal">
+      <div class="pixel-hero">🧑‍🌾</div><small>第 1 天</small><h1>醒在荒岛</h1>
+      <p>春天刚刚开始。收集物资、搭建庇护所，小心在荒野里游荡的动物。</p>
+      <div class="rule"><span>☝</span><p><b>点击格子移动</b><small>物资会阻挡道路，靠近后先拾取</small></p></div>
+      <button id="startButton" class="primary">开始求生</button>
+      <button id="viewDeathLog" class="primary log-view hidden local-only">查看本局日志</button>
+      <button id="restartButton" class="primary restart hidden">清除存档，重新开始</button>
+    </section>
+  </div>
+  <script src="ai-strategy.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
