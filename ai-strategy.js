@@ -3,8 +3,8 @@
  * 本地回归测试确认新参数更好后，只修改这个文件并发布。
  */
 window.AI_STRATEGY={
-  "version": "1.3.0",
-  "description": "无终点生存测试：以平均存活天数作为优化目标",
+  "version": "1.4.0",
+  "description": "食物卫生、木冰箱、床与分级动物策略",
   "eatMealBelow": 62,
   "eatBerryBelow": 42,
   "fishBelow": 70,
@@ -17,6 +17,8 @@ window.AI_STRATEGY={
     "trap",
     "fence",
     "door",
+    "fridge",
+    "bed",
     "shelter",
     "rod",
     "strongShelter"
