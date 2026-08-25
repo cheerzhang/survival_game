@@ -3,8 +3,8 @@
  * 本地回归测试确认新参数更好后，只修改这个文件并发布。
  */
 window.AI_STRATEGY={
-  "version": "1.6.11",
-  "description": "第 4 代冠军：适应度 4124.6，平均生存 36.1 天",
+  "version": "1.7.0",
+  "description": "开放动作效用AI：保留上一代冠军参数并启用可进化决策权重",
   "eatMealBelow": 72,
   "eatBerryBelow": 47,
   "fishBelow": 60,
@@ -17,6 +17,15 @@ window.AI_STRATEGY={
   "wallLevel3Day": 10,
   "weapon2Day": 5,
   "weapon3Day": 11,
+  "survivalWeight": 2.2,
+  "hungerWeight": 1.8,
+  "threatWeight": 2,
+  "tideWeight": 1.7,
+  "buildingWeight": 1.35,
+  "resourceWeight": 1,
+  "repairWeight": 1.5,
+  "futureWeight": 1.2,
+  "explorationWeight": 0.7,
   "craftPriority": [
     "kitchen",
     "bed",
