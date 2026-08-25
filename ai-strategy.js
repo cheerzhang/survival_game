@@ -3,8 +3,8 @@
  * 本地回归测试确认新参数更好后，只修改这个文件并发布。
  */
 window.AI_STRATEGY={
-  "version": "1.6.6",
-  "description": "降低野猪死亡：扩大路径陷阱警戒范围",
+  "version": "1.6.8",
+  "description": "陷阱距离已到上限：改为更早升级武器和围栏",
   "eatMealBelow": 62,
   "eatBerryBelow": 42,
   "fishBelow": 70,
@@ -13,9 +13,9 @@ window.AI_STRATEGY={
   "buildShelterBeforeBase": false,
   "growthValueWeight": 1.5,
   "bedHealthBelow": 75,
-  "wallLevel2Day": 5,
+  "wallLevel2Day": 3,
   "wallLevel3Day": 10,
-  "weapon2Day": 5,
+  "weapon2Day": 3,
   "weapon3Day": 10,
   "craftPriority": [
     "kitchen",
