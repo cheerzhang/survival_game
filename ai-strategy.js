@@ -3,8 +3,8 @@
  * 本地回归测试确认新参数更好后，只修改这个文件并发布。
  */
 window.AI_STRATEGY={
-  "version": "1.7.2",
-  "description": "第 3 代冠军：适应度 461.5，平均生存 3.7 天",
+  "version": "2.0.0",
+  "description": "开放动作策略初代：所有合法行为由状态特征与动作权重共同选择",
   "eatMealBelow": 77,
   "eatBerryBelow": 37,
   "fishBelow": 60,
@@ -39,5 +39,33 @@ window.AI_STRATEGY={
   "explorationWeight": 0.3,
   "farmingWeight": 1.4,
   "storageWeight": 0.85,
-  "clothingWeight": 1.05
+  "clothingWeight": 1.05,
+  "featureWeights": {
+    "urgency": 38,
+    "hunger": 32,
+    "health": 34,
+    "threat": 36,
+    "tide": 30,
+    "weather": 24,
+    "future": 16,
+    "yield": 12,
+    "distance": -2.2
+  },
+  "actionWeights": {
+    "attack": 42,
+    "flee": 18,
+    "eatMeal": 20,
+    "eatBerry": 12,
+    "cook": 18,
+    "sleep": 14,
+    "repairBridge": 12,
+    "harvest": 24,
+    "water": 16,
+    "sow": 14,
+    "makeSeeds": 8,
+    "evacuate": 28,
+    "upgradeWall": 12,
+    "gather": 16,
+    "fish": 10
+  }
 };
