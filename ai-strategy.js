@@ -5,6 +5,8 @@
 window.AI_STRATEGY={
   "version": "2.0.0",
   "description": "开放动作策略初代：所有合法行为由状态特征与动作权重共同选择",
+  "policySchema": 2,
+  "trained": false,
   "eatMealBelow": 77,
   "eatBerryBelow": 37,
   "fishBelow": 60,
