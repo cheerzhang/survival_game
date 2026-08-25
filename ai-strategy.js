@@ -3,19 +3,19 @@
  * 本地回归测试确认新参数更好后，只修改这个文件并发布。
  */
 window.AI_STRATEGY={
-  "version": "1.6.8",
-  "description": "陷阱距离已到上限：改为更早升级武器和围栏",
-  "eatMealBelow": 62,
+  "version": "1.6.9",
+  "description": "第 2 代冠军：适应度 3919.2，平均生存 36.2 天",
+  "eatMealBelow": 52,
   "eatBerryBelow": 42,
-  "fishBelow": 70,
-  "trapThreatDistance": 6,
+  "fishBelow": 65,
+  "trapThreatDistance": 5,
   "testSpeed": 4,
   "buildShelterBeforeBase": false,
-  "growthValueWeight": 1.5,
-  "bedHealthBelow": 75,
-  "wallLevel2Day": 3,
+  "growthValueWeight": 1.25,
+  "bedHealthBelow": 80,
+  "wallLevel2Day": 2,
   "wallLevel3Day": 10,
-  "weapon2Day": 3,
+  "weapon2Day": 4,
   "weapon3Day": 10,
   "craftPriority": [
     "kitchen",
@@ -23,8 +23,8 @@ window.AI_STRATEGY={
     "fence",
     "door",
     "fridge",
-    "bed",
     "shelter",
+    "bed",
     "rod",
     "strongShelter"
   ]
