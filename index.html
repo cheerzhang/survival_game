@@ -26,8 +26,10 @@
     <section class="game-shell">
       <canvas id="game" aria-label="生存游戏地图"></canvas>
       <button id="bagButton" class="side-button"><span>▣</span><b>背包</b><small id="bagCount">0 / 12</small></button>
+      <button id="pauseButton" class="pause-button"><span>Ⅱ</span><b>暂停</b><small>游戏中</small></button>
       <button id="aiButton" class="ai-button"><span>◉</span><b>AI 自动</b><small>关闭</small></button>
       <button id="logButton" class="log-button local-only"><span>≡</span><b>测试日志</b></button>
+      <div id="pauseOverlay" class="pause-overlay hidden"><span>Ⅱ</span><b>游戏已暂停</b><small>点击左侧“继续”恢复游戏</small></div>
       <div id="hint" class="hint">点击一个地面格子开始移动</div>
       <div id="toast" class="toast"></div>
       <div id="actionPrompt" class="action-prompt hidden">
@@ -46,7 +48,7 @@
 
   <div id="scrim" class="scrim"></div>
   <div id="updateBanner" class="update-banner hidden"><div><b>发现新版本</b><small>游戏已经更新，可以立即刷新</small></div><button id="reloadUpdate">立即更新</button></div>
-  <div id="batchProgress" class="batch-progress local-only"><div class="batch-spinner">◉</div><b>AI策略高速迭代</b><span id="batchProgressText">准备测试…</span><div class="batch-track"><i id="batchProgressBar"></i></div><small id="batchProgressDay">当前存活：第 1 天</small></div>
+  <div id="batchProgress" class="batch-progress local-only"><div class="batch-spinner">◉</div><b id="batchProgressTitle">AI策略高速迭代</b><span id="batchProgressText">准备测试…</span><div class="batch-track"><i id="batchProgressBar"></i></div><small id="batchProgressDay">当前存活：第 1 天</small></div>
   <aside id="bag" class="bag" aria-hidden="true">
     <div class="handle"></div>
     <div class="bag-head"><div><small>生存装备</small><h2>背包</h2></div><button id="closeBag">×</button></div>
@@ -58,9 +60,10 @@
     <header><div><small>自动测试</small><b>AI 生存日志</b></div><button id="closeLog">×</button></header>
     <div class="log-summary"><span id="logDay">第 1 天</span><span id="logState">健康 100 · 饥饿 80</span></div>
     <div class="log-actions"><button id="runTenButton">▶ 测试 10 局</button><button id="evolveButton">🧬 自动进化</button><button id="clearHistoryButton">清空历史</button></div>
+    <div class="test-mode-help"><span><b>测试 10 局</b>：固定当前策略，测稳定性</span><span><b>自动进化</b>：300 局自动调参，比较 5 代冠军</span></div>
     <div id="runSummary" class="run-summary">尚无历史测试结果</div>
     <div id="strategyReview" class="strategy-review hidden">
-      <b>策略迭代建议</b>
+      <b id="strategyReviewTitle">策略迭代建议</b>
       <div id="resultTable"></div>
       <div id="strategyDiff"></div>
       <button id="applyStrategyButton">应用推荐策略并更新文件</button>
