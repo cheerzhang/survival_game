@@ -36,5 +36,8 @@ window.AI_STRATEGY={
   "resourceWeight": 1.25,
   "repairWeight": 1.5,
   "futureWeight": 0.95,
-  "explorationWeight": 0.3
+  "explorationWeight": 0.3,
+  "farmingWeight": 1.4,
+  "storageWeight": 1.1,
+  "clothingWeight": 1.3
 };
