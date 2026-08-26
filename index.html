@@ -27,6 +27,10 @@
       <div id="weatherAlert" class="weather-alert hidden"><span>⚠</span><div><b>恶劣天气</b><small>进入带门的封闭住宅附近</small></div></div>
       <div id="activityNotice" class="activity-notice hidden"><span>⚒</span><b>正在行动</b></div>
       <div id="toast" class="toast" aria-live="polite"></div>
+      <div id="tutorialGuide" class="tutorial-guide hidden">
+        <span>☝</span><div><b>新手引导</b><small>点击地面移动；点击物资后走近采集；遇到危险时可暂停游戏。</small></div>
+        <button id="closeTutorial" aria-label="关闭新手引导">×</button>
+      </div>
     </section>
 
     <section class="game-shell">
@@ -35,8 +39,8 @@
       <button id="pauseButton" class="pause-button"><span>Ⅱ</span><b>暂停</b><small>游戏中</small></button>
       <button id="aiButton" class="ai-button"><span>◉</span><b>AI 自动</b><small>关闭</small></button>
       <button id="logButton" class="log-button local-only"><span>≡</span><b>测试日志</b></button>
+      <button id="openTutorial" class="tutorial-button hidden" aria-label="重新打开新手引导">?</button>
       <div id="pauseOverlay" class="pause-overlay hidden"><span>Ⅱ</span><b>游戏已暂停</b><small>点击左侧“继续”恢复游戏</small></div>
-      <div id="hint" class="hint">点击一个地面格子开始移动</div>
       <div id="actionPrompt" class="action-prompt hidden">
         <div><span id="actionIcon">✦</span><p><b id="actionTitle">拾取</b><small id="actionText"></small></p></div>
         <div class="action-buttons"><button id="dismantleButton" class="danger hidden">拆除</button><button id="upgradeButton" class="hidden">升级</button><button id="actionButton">拾取</button></div>
