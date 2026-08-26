@@ -23,16 +23,20 @@
       </div>
     </header>
 
+    <section id="noticeRail" class="notice-rail">
+      <div id="weatherAlert" class="weather-alert hidden"><span>⚠</span><div><b>恶劣天气</b><small>进入带门的封闭住宅附近</small></div></div>
+      <div id="activityNotice" class="activity-notice hidden"><span>⚒</span><b>正在行动</b></div>
+      <div id="toast" class="toast" aria-live="polite"></div>
+    </section>
+
     <section class="game-shell">
       <canvas id="game" aria-label="生存游戏地图"></canvas>
       <button id="bagButton" class="side-button"><span>▣</span><b>背包</b><small id="bagCount">0 / 12</small></button>
       <button id="pauseButton" class="pause-button"><span>Ⅱ</span><b>暂停</b><small>游戏中</small></button>
       <button id="aiButton" class="ai-button"><span>◉</span><b>AI 自动</b><small>关闭</small></button>
       <button id="logButton" class="log-button local-only"><span>≡</span><b>测试日志</b></button>
-      <div id="weatherAlert" class="weather-alert hidden"><span>⚠</span><div><b>恶劣天气</b><small>进入带门的封闭住宅附近</small></div></div>
       <div id="pauseOverlay" class="pause-overlay hidden"><span>Ⅱ</span><b>游戏已暂停</b><small>点击左侧“继续”恢复游戏</small></div>
       <div id="hint" class="hint">点击一个地面格子开始移动</div>
-      <div id="toast" class="toast"></div>
       <div id="actionPrompt" class="action-prompt hidden">
         <div><span id="actionIcon">✦</span><p><b id="actionTitle">拾取</b><small id="actionText"></small></p></div>
         <div class="action-buttons"><button id="dismantleButton" class="danger hidden">拆除</button><button id="upgradeButton" class="hidden">升级</button><button id="actionButton">拾取</button></div>
