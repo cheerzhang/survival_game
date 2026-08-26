@@ -35,15 +35,15 @@
       <div id="toast" class="toast"></div>
       <div id="actionPrompt" class="action-prompt hidden">
         <div><span id="actionIcon">✦</span><p><b id="actionTitle">拾取</b><small id="actionText"></small></p></div>
-        <div class="action-buttons"><button id="dismantleButton" class="danger hidden">拆除</button><button id="actionButton">拾取</button></div>
+        <div class="action-buttons"><button id="dismantleButton" class="danger hidden">拆除</button><button id="upgradeButton" class="hidden">升级</button><button id="actionButton">拾取</button></div>
       </div>
     </section>
 
     <footer class="quickbar">
-      <button class="quick active" data-slot="hand"><span>🗡</span><small>攻击</small></button>
-      <button class="quick locked" data-slot="rod"><span>🎣</span><small>鱼竿</small></button>
-      <button class="quick locked" data-slot="trap"><span>⌗</span><small>陷阱</small></button>
-      <button class="quick locked" data-slot="fence"><span>▥</span><small>围栏</small></button>
+      <button id="weaponStatus" class="quick active" data-slot="hand"><span>✊</span><small>武器 · 徒手</small></button>
+      <button id="toolStatus" class="quick" data-info="tool"><span>🖐</span><small>农具 · 无</small></button>
+      <button id="clothingStatus" class="quick" data-info="clothing"><span>👤</span><small>衣服 · 无</small></button>
+      <button id="houseStatus" class="quick" data-info="house"><span>🏕</span><small>房屋 · 无</small></button>
     </footer>
   </main>
 

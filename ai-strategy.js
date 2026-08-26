@@ -78,6 +78,7 @@ window.AI_STRATEGY={
     "makeSeeds": -14.93,
     "evacuate": 53.11,
     "upgradeWall": -32.48,
+    "upgradeItem": 9,
     "gather": 36.97,
     "fish": -3.48,
     "craft:warmCoat": -38.21,
