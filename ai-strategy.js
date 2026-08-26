@@ -33,7 +33,6 @@ window.AI_STRATEGY={
   "clothingWeight": 1.05,
   "craftPriority": [
     "kitchen",
-    "shelter",
     "fence",
     "door",
     "fridge",
@@ -93,7 +92,6 @@ window.AI_STRATEGY={
     "craft:kitchen": 65.74,
     "craft:fridge": 6.05,
     "craft:bed": 31.03,
-    "craft:shelter": 26.84,
     "craft:strongShelter": 15.91,
     "craft:bridge": -3.56,
     "craft:boat": -2.43,
