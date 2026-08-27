@@ -4,9 +4,9 @@
  */
 window.AI_STRATEGY={
   "version": "2.0.43",
-  "description": "14天季节规则第 6 代冠军：适应度 823.9，平均生存 5.8 天",
+  "description": "旧冠军迁移到水域材料制作链；等待继续进化",
   "policySchema": 2,
-  "trained": true,
+  "trained": false,
   "eatMealBelow": 77,
   "eatBerryBelow": 37,
   "fishBelow": 60,
@@ -52,8 +52,8 @@ window.AI_STRATEGY={
     "farmPlot",
     "storage"
   ],
-  "gameRulesVersion": "season-14-v4",
-  "requiresRetraining": false,
+  "gameRulesVersion": "water-material-v5",
+  "requiresRetraining": true,
   "featureWeights": {
     "urgency": 30.56,
     "hunger": 0.89,
