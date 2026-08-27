@@ -1,14 +1,14 @@
 /**
- * 正式开放AI策略（schema v2）。
+ * 正式开放AI策略（schema v3）。
  * 本地自动进化写入全部状态权重与动作权重；commit并push后由GitHub Pages发布。
  */
 window.AI_STRATEGY={
   "version": "2.0.54",
-  "description": "14天季节规则第 7 代冠军：适应度 3086.6，平均生存 22.6 天",
-  "policySchema": 2,
-  "gameRulesVersion": "water-material-v5",
-  "requiresRetraining": false,
-  "trained": true,
+  "description": "时间规划特征已开放，等待重新训练",
+  "policySchema": 3,
+  "gameRulesVersion": "temporal-planning-v6",
+  "requiresRetraining": true,
+  "trained": false,
   "eatMealBelow": 77,
   "eatBerryBelow": 37,
   "fishBelow": 60,
@@ -62,7 +62,15 @@ window.AI_STRATEGY={
     "weather": -41.17,
     "future": -4.69,
     "yield": 17.43,
-    "distance": -4.27
+    "distance": -4.27,
+    "seasonProgress": 10,
+    "seasonLead": 18,
+    "tideLead": 20,
+    "growthPotential": 14,
+    "foodReserve": 10,
+    "clothingGap": 22,
+    "durabilityRisk": 18,
+    "seasonDanger": 16
   },
   "actionWeights": {
     "attack": 32.01,
@@ -82,6 +90,8 @@ window.AI_STRATEGY={
     "upgradeItem": 40.27,
     "gather": 2.58,
     "fish": 30.88,
+    "waitGrowth": 4,
+    "prepareClothing": 12,
     "craft:warmCoat": -35.62,
     "craft:coolClothes": 7.4,
     "craft:rainCoat": -21.52,
