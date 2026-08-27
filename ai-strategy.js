@@ -4,9 +4,9 @@
  */
 window.AI_STRATEGY={
   "version": "2.0.34",
-  "description": "住宅专用规则第 5 代冠军：适应度 5876.7，平均生存 39.8 天",
+  "description": "旧冠军迁移到天气衣物规则；雨衣与户外衣物决策等待继续进化",
   "policySchema": 2,
-  "trained": true,
+  "trained": false,
   "eatMealBelow": 77,
   "eatBerryBelow": 37,
   "fishBelow": 60,
@@ -41,6 +41,7 @@ window.AI_STRATEGY={
     "bed",
     "warmCoat",
     "coolClothes",
+    "rainCoat",
     "spear",
     "strongSpear",
     "hunterSpear",
@@ -51,8 +52,8 @@ window.AI_STRATEGY={
     "farmPlot",
     "storage"
   ],
-  "gameRulesVersion": "house-only-v1",
-  "requiresRetraining": false,
+  "gameRulesVersion": "weather-clothing-v2",
+  "requiresRetraining": true,
   "featureWeights": {
     "urgency": 23.06,
     "hunger": 32.73,
@@ -84,6 +85,7 @@ window.AI_STRATEGY={
     "upgradeItem": 21.78,
     "craft:warmCoat": -31.56,
     "craft:coolClothes": -5.07,
+    "craft:rainCoat": 8,
     "craft:spear": 17.88,
     "craft:strongSpear": 9.58,
     "craft:hunterSpear": 11.77,
