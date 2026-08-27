@@ -3,8 +3,8 @@
  * 本地自动进化写入全部状态权重与动作权重；commit并push后由GitHub Pages发布。
  */
 window.AI_STRATEGY={
-  "version": "2.0.28",
-  "description": "住宅专用规则第 2 代冠军：适应度 5953.7，平均生存 36.2 天",
+  "version": "2.0.29",
+  "description": "住宅专用规则第 1 代冠军：适应度 5255.0，平均生存 32.4 天",
   "policySchema": 2,
   "trained": true,
   "eatMealBelow": 77,
@@ -108,9 +108,9 @@ window.AI_STRATEGY={
     "runsPerCandidate": 5,
     "mutationRate": 0.6,
     "mutationStep": 10,
-    "averageDays": 36.2,
-    "minDays": 27,
-    "maxDays": 45,
-    "fitness": 5953.71
+    "averageDays": 32.4,
+    "minDays": 24,
+    "maxDays": 43,
+    "fitness": 5255.01
   }
 };
