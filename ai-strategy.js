@@ -3,8 +3,8 @@
  * 本地自动进化写入全部状态权重与动作权重；commit并push后由GitHub Pages发布。
  */
 window.AI_STRATEGY={
-  "version": "3.0.20",
-  "description": "时间规划规则第 2 代冠军：适应度 744.2，平均生存 5.1 天",
+  "version": "3.0.21",
+  "description": "时间规划规则第 8 代冠军：适应度 748.1，平均生存 5.1 天",
   "policySchema": 3,
   "gameRulesVersion": "critical-survival-v8",
   "requiresRetraining": false,
@@ -55,16 +55,16 @@ window.AI_STRATEGY={
   ],
   "featureWeights": {
     "urgency": 42.76,
-    "hunger": 28.44,
-    "health": 21.8,
-    "criticalHealth": 51.15,
+    "hunger": 28.56,
+    "health": 22.2,
+    "criticalHealth": 51.64,
     "dying": -7.46,
-    "threat": 33.79,
+    "threat": 33.4,
     "tide": 30.2,
     "weather": 31.69,
     "future": -23.57,
     "yield": 12.32,
-    "distance": 5.94,
+    "distance": 6.02,
     "seasonProgress": 15.55,
     "seasonLead": 15.34,
     "tideLead": 24.62,
@@ -74,18 +74,18 @@ window.AI_STRATEGY={
     "durabilityRisk": 11.44,
     "seasonDanger": 10.26,
     "worldProgress": 16.04,
-    "enemyTier": 22.37,
-    "trapDurability": 21.74,
+    "enemyTier": 22.72,
+    "trapDurability": 22.12,
     "trapSaturation": 17.26
   },
   "actionWeights": {
     "attack": 39.31,
-    "flee": 19.9,
+    "flee": 20.45,
     "eatMeal": 14.87,
     "eatBerry": 7.4,
     "cook": 26.65,
     "sleep": 2.72,
-    "repairBridge": 12.32,
+    "repairBridge": 18.15,
     "harvest": 26.92,
     "water": 17.75,
     "sow": 14.42,
@@ -99,14 +99,14 @@ window.AI_STRATEGY={
     "fish": 8.94,
     "waitGrowth": 1.78,
     "prepareClothing": 3.76,
-    "craft:warmCoat": 6.99,
+    "craft:warmCoat": 2.99,
     "craft:coolClothes": 0.88,
-    "craft:rainCoat": 13.25,
+    "craft:rainCoat": 13.59,
     "craft:spear": 24.6,
-    "craft:strongSpear": 3.38,
+    "craft:strongSpear": 3.35,
     "craft:hunterSpear": 8.12,
     "craft:trap": 15.71,
-    "craft:rod": 6.55,
+    "craft:rod": 8.36,
     "craft:fence": -20.12,
     "craft:door": 7.72,
     "craft:kitchen": 8.18,
@@ -116,8 +116,8 @@ window.AI_STRATEGY={
     "craft:boat": 4.03,
     "craft:hoe": 3.95,
     "craft:wateringCan": 4.83,
-    "craft:farmPlot": 2.58,
-    "craft:storage": 8.49
+    "craft:farmPlot": 2.15,
+    "craft:storage": 7.98
   },
   "trainingSummary": {
     "runs": 640,
@@ -129,6 +129,6 @@ window.AI_STRATEGY={
     "averageDays": 5.13,
     "minDays": 4,
     "maxDays": 7,
-    "fitness": 744.19
+    "fitness": 748.07
   }
 };
