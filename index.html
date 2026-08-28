@@ -72,7 +72,7 @@
     <div class="log-actions"><button id="runTenButton">▶ 测试基因 AI 10 局</button><button id="evolveButton">♾ 基因 AI 持续进化</button><button id="neuralEvolveButton">🧠 训练神经 AI</button><button id="clearHistoryButton">清空历史</button><button id="resetAiTrainingButton" class="danger">重置基因 AI</button><button id="resetNeuralTrainingButton" class="danger">重置神经 AI</button></div>
     <div class="test-mode-help"><span><b>测试 10 局</b>：固定当前策略，测稳定性</span><span id="evolveHelp"><b>自动进化</b>：180 局开放权重学习</span></div>
     <details class="evolution-console" open>
-      <summary>🧠 进化控制台 <small>参数会自动保存在本机</small></summary>
+      <summary>🧬 基因 AI 控制台 <small>仅影响基因 AI</small></summary>
       <div class="evolution-grid">
         <label>代数 <output id="generationValue">5</output><input id="generationInput" type="range" min="2" max="12" value="5"></label>
         <label>每代个体 <output id="populationValue">6</output><input id="populationInput" type="range" min="4" max="12" value="6"></label>
@@ -82,6 +82,20 @@
         <label>模拟速度 <output id="speedValue">160×</output><input id="speedInput" type="range" min="80" max="320" step="40" value="160"></label>
       </div>
       <p id="evolutionEstimate">预计 180 局 · 较快探索</p>
+    </details>
+    <details class="evolution-console neural-console" open>
+      <summary>🧠 神经 AI 控制台 <small>独立参数与存档</small></summary>
+      <p class="network-shape">PPO Actor–Critic：策略网络选择合法动作，价值网络预测剩余寿命 · 唯一奖励为存活时间</p>
+      <div class="evolution-grid">
+        <label>训练局数 <output id="ppoEpisodesValue">120</output><input id="ppoEpisodesInput" type="range" min="20" max="500" step="20" value="120"></label>
+        <label>学习率 α <output id="ppoAlphaValue">0.003</output><input id="ppoAlphaInput" type="range" min="1" max="20" value="3"></label>
+        <label>长期折扣 γ <output id="ppoGammaValue">0.999</output><input id="ppoGammaInput" type="range" min="990" max="1000" value="999"></label>
+        <label>探索熵 <output id="ppoEntropyValue">0.02</output><input id="ppoEntropyInput" type="range" min="0" max="10" value="2"></label>
+        <label>PPO 裁剪 <output id="ppoClipValue">0.20</output><input id="ppoClipInput" type="range" min="5" max="40" step="5" value="20"></label>
+        <label>更新轮数 <output id="ppoEpochsValue">4</output><input id="ppoEpochsInput" type="range" min="1" max="10" value="4"></label>
+        <label>模拟速度 <output id="ppoSpeedValue">160×</output><input id="ppoSpeedInput" type="range" min="80" max="320" step="40" value="160"></label>
+      </div>
+      <p id="neuralEvolutionEstimate">120 局 · 每一步只奖励继续存活</p>
     </details>
     <div id="runSummary" class="run-summary">尚无历史测试结果</div>
     <div id="strategyReview" class="strategy-review hidden">
