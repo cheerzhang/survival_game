@@ -93,6 +93,9 @@
         <label>探索熵 <output id="ppoEntropyValue">0.02</output><input id="ppoEntropyInput" type="range" min="0" max="10" value="2"></label>
         <label>PPO 裁剪 <output id="ppoClipValue">0.20</output><input id="ppoClipInput" type="range" min="5" max="40" step="5" value="20"></label>
         <label>更新轮数 <output id="ppoEpochsValue">4</output><input id="ppoEpochsInput" type="range" min="1" max="10" value="4"></label>
+        <label>轨迹批量 <output id="ppoRolloutValue">16局</output><input id="ppoRolloutInput" type="range" min="4" max="32" step="4" value="16"></label>
+        <label>GAE λ <output id="ppoLambdaValue">0.95</output><input id="ppoLambdaInput" type="range" min="80" max="100" value="95"></label>
+        <label>冠军评测 <output id="ppoEvalRunsValue">6局</output><input id="ppoEvalRunsInput" type="range" min="4" max="12" step="2" value="6"></label>
         <label>模拟速度 <output id="ppoSpeedValue">160×</output><input id="ppoSpeedInput" type="range" min="80" max="320" step="40" value="160"></label>
       </div>
       <p id="neuralEvolutionEstimate">120 局 · 每一步只奖励继续存活</p>
