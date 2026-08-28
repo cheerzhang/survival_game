@@ -37,7 +37,8 @@
       <canvas id="game" aria-label="生存游戏地图"></canvas>
       <button id="bagButton" class="side-button"><span>▣</span><b>背包</b><small id="bagCount">0 / 12</small></button>
       <button id="pauseButton" class="pause-button"><span>Ⅱ</span><b>暂停</b><small>游戏中</small></button>
-      <button id="aiButton" class="ai-button"><span>◉</span><b>AI 自动</b><small>关闭</small></button>
+      <button id="aiButton" class="ai-button"><span>◎</span><b>基因 AI</b><small>关闭</small></button>
+      <button id="neuralAiButton" class="ai-button neural-ai-button"><span>◉</span><b>神经 AI</b><small>关闭</small></button>
       <button id="logButton" class="log-button local-only"><span>≡</span><b>测试日志</b></button>
       <button id="openTutorial" class="tutorial-button hidden" aria-label="重新打开新手引导">?</button>
       <div id="pauseOverlay" class="pause-overlay hidden"><span>Ⅱ</span><b>游戏已暂停</b><small>点击左侧“继续”恢复游戏</small></div>
@@ -68,7 +69,7 @@
   <aside id="logPanel" class="log-panel local-only">
     <header><div><small>自动测试</small><b>AI 生存日志</b></div><button id="closeLog">×</button></header>
     <div class="log-summary"><span id="logDay">第 1 天</span><span id="logState">健康 100 · 饥饿 80</span></div>
-    <div class="log-actions"><button id="runTenButton">▶ 测试 10 局</button><button id="evolveButton">♾ 持续进化</button><button id="clearHistoryButton">清空历史</button><button id="resetAiTrainingButton" class="danger">从头训练 AI</button></div>
+    <div class="log-actions"><button id="runTenButton">▶ 测试基因 AI 10 局</button><button id="evolveButton">♾ 基因 AI 持续进化</button><button id="neuralEvolveButton">🧠 训练神经 AI</button><button id="clearHistoryButton">清空历史</button><button id="resetAiTrainingButton" class="danger">重置基因 AI</button><button id="resetNeuralTrainingButton" class="danger">重置神经 AI</button></div>
     <div class="test-mode-help"><span><b>测试 10 局</b>：固定当前策略，测稳定性</span><span id="evolveHelp"><b>自动进化</b>：180 局开放权重学习</span></div>
     <details class="evolution-console" open>
       <summary>🧠 进化控制台 <small>参数会自动保存在本机</small></summary>
@@ -105,6 +106,7 @@
     </section>
   </div>
   <script src="ai-strategy.js"></script>
+  <script src="neural-strategy.js"></script>
   <script src="game.js"></script>
 </body>
 </html>
