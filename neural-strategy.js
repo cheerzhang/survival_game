@@ -1,6 +1,6 @@
 /** 神经网络AI冠军：由本地训练写入，push后同步线上。 */
 window.NEURAL_STRATEGY={
-  "version": "2.0.1",
+  "version": "2.0.3",
   "algorithm": "ppo-actor-critic",
   "gameRulesVersion": "critical-survival-v8",
   "architecture": {
@@ -1219,6 +1219,6 @@ window.NEURAL_STRATEGY={
   "trainingSummary": {
     "averageDays": 2.8,
     "objective": "survival-time-only",
-    "trainedAt": "2026-08-28T12:57:48.634Z"
+    "trainedAt": "2026-08-28T13:01:42.123Z"
   }
 };
