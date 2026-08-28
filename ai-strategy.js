@@ -3,8 +3,8 @@
  * 本地自动进化写入全部状态权重与动作权重；commit并push后由GitHub Pages发布。
  */
 window.AI_STRATEGY={
-  "version": "3.0.21",
-  "description": "时间规划规则第 8 代冠军：适应度 748.1，平均生存 5.1 天",
+  "version": "3.0.22",
+  "description": "时间规划规则第 2 代冠军：适应度 748.1，平均生存 5.1 天",
   "policySchema": 3,
   "gameRulesVersion": "critical-survival-v8",
   "requiresRetraining": false,
