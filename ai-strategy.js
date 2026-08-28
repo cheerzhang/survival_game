@@ -3,8 +3,8 @@
  * 本地自动进化写入全部状态权重与动作权重；commit并push后由GitHub Pages发布。
  */
 window.AI_STRATEGY={
-  "version": "3.0.7",
-  "description": "时间规划规则第 8 代冠军：适应度 725.1，平均生存 5.0 天",
+  "version": "3.0.9",
+  "description": "时间规划规则第 2 代冠军：适应度 725.9，平均生存 5.0 天",
   "policySchema": 3,
   "gameRulesVersion": "critical-survival-v8",
   "requiresRetraining": false,
@@ -59,8 +59,8 @@ window.AI_STRATEGY={
     "health": 21.8,
     "criticalHealth": 50.8,
     "dying": -7.27,
-    "threat": 34.51,
-    "tide": 30.17,
+    "threat": 33.79,
+    "tide": 29.88,
     "weather": 31.13,
     "future": -23.57,
     "yield": 12,
@@ -73,7 +73,7 @@ window.AI_STRATEGY={
     "clothingGap": 25.85,
     "durabilityRisk": 11.44,
     "seasonDanger": 10.26,
-    "worldProgress": 15.7,
+    "worldProgress": 15.59,
     "enemyTier": 22.37,
     "trapDurability": 21.74,
     "trapSaturation": 17.84
@@ -98,13 +98,13 @@ window.AI_STRATEGY={
     "gather": -15.1,
     "fish": 9.32,
     "waitGrowth": 1.28,
-    "prepareClothing": 4,
+    "prepareClothing": 3.94,
     "craft:warmCoat": 6.99,
     "craft:coolClothes": 0.88,
     "craft:rainCoat": 13.25,
     "craft:spear": 24.6,
     "craft:strongSpear": 3.38,
-    "craft:hunterSpear": 8.83,
+    "craft:hunterSpear": 8.51,
     "craft:trap": 15.25,
     "craft:rod": 6.55,
     "craft:fence": -20.12,
@@ -115,8 +115,8 @@ window.AI_STRATEGY={
     "craft:bridge": 9.49,
     "craft:boat": 4.03,
     "craft:hoe": 3.56,
-    "craft:wateringCan": 4.44,
-    "craft:farmPlot": 2.43,
+    "craft:wateringCan": 4.64,
+    "craft:farmPlot": 2.01,
     "craft:storage": 8.49
   },
   "trainingSummary": {
@@ -129,6 +129,6 @@ window.AI_STRATEGY={
     "averageDays": 5,
     "minDays": 4,
     "maxDays": 7,
-    "fitness": 725.09
+    "fitness": 725.89
   }
 };
