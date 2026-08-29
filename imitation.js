@@ -16,9 +16,9 @@ const imitationAttack=attack;attack=function(e){recordBy('attack',{target:{x:e.x
 const imitationEat=eat;eat=function(type){recordHumanChoice(a=>a.type==='eat'&&(type==='meal'?a.food>.2:a.food<=.2),`吃${defs[type]?.[0]||type}`);return imitationEat(type)};
 const imitationCraft=craft;craft=function(id){recordBy('craft',{id});return imitationCraft(id)};
 const imitationCommitPlace=commitPlace;commitPlace=function(type,x,y,bridge){recordBy('place',{id:type,target:{x,y}});return imitationCommitPlace(type,x,y,bridge)};
-const imitationSleep=sleep;sleep=function(){recordHumanChoice(a=>a.type==='use'&&a.name.includes('床'),'使用床');return imitationSleep()};
+const imitationSleep=sleep;sleep=function(){if(sleepingUntil<=performance.now())recordHumanChoice(a=>a.type==='use'&&a.name.includes('床'),'使用床');return imitationSleep()};
 const imitationCook=cook;cook=function(){recordHumanChoice(a=>a.type==='use'&&a.name==='烹饪','烹饪');return imitationCook()};
-const imitationFish=fish;fish=function(){recordHumanChoice(a=>a.type==='fish','钓鱼');return imitationFish()};
+const imitationFish=fish;fish=function(...args){if(!fishingInProgress)recordHumanChoice(a=>a.type==='fish','钓鱼');return imitationFish(...args)};
 const imitationFarmAction=farmAction;farmAction=function(plot){recordBy('use',{target:{x:plot.x,y:plot.y},label:'操作农田'});return imitationFarmAction(plot)};
 const imitationMakeSeeds=makeBerrySeeds;makeBerrySeeds=function(){recordHumanChoice(a=>a.type==='craft'&&a.recipe?.id==='seed','制作种子');return imitationMakeSeeds()};
 const imitationUpgrade=upgradeItem;upgradeItem=function(type,item){if(item)recordHumanChoice(a=>a.type==='use'&&a.target?.x===item.x&&a.target?.y===item.y&&a.name.startsWith('升级'),`升级${type}`);return imitationUpgrade(type,item)};
