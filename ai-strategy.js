@@ -6,7 +6,7 @@ window.AI_STRATEGY={
   "version": "3.0.0",
   "description": "AI训练已重置：从默认开放权重重新开始",
   "policySchema": 3,
-  "gameRulesVersion": "critical-survival-v9",
+  "gameRulesVersion": "critical-survival-v10",
   "requiresRetraining": true,
   "trained": false,
   "eatMealBelow": 62,

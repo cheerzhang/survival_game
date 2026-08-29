@@ -2,7 +2,7 @@
 window.NEURAL_STRATEGY={
   "version": "2.0.0",
   "algorithm": "ppo-actor-critic",
-  "gameRulesVersion": "critical-survival-v9",
+  "gameRulesVersion": "critical-survival-v10",
   "architecture": {
     "input": 48,
     "hidden": 12

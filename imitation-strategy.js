@@ -2,7 +2,7 @@
 window.IMITATION_STRATEGY={
   "version": "1.0.0",
   "algorithm": "behavior-cloning",
-  "gameRulesVersion": "critical-survival-v9",
+  "gameRulesVersion": "critical-survival-v10",
   "architecture": {
     "input": 48,
     "hidden": 12
