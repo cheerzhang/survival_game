@@ -3,8 +3,8 @@
  * 本地自动进化写入全部状态权重与动作权重；commit并push后由GitHub Pages发布。
  */
 window.AI_STRATEGY={
-  "version": "3.0.2",
-  "description": "时间规划规则第 2 代冠军：适应度 438.1，平均生存 3.9 天",
+  "version": "3.0.3",
+  "description": "时间规划规则第 4 代冠军：适应度 449.6，平均生存 4.0 天",
   "policySchema": 3,
   "gameRulesVersion": "critical-survival-v8",
   "requiresRetraining": false,
@@ -67,14 +67,14 @@ window.AI_STRATEGY={
     "distance": -2.2,
     "seasonProgress": 10.86,
     "seasonLead": 18,
-    "tideLead": 20.77,
-    "growthPotential": 14,
+    "tideLead": 20.27,
+    "growthPotential": 14.2,
     "foodReserve": 9.86,
     "clothingGap": 22,
-    "durabilityRisk": 18,
+    "durabilityRisk": 17.43,
     "seasonDanger": 16,
     "worldProgress": 17.75,
-    "enemyTier": 20.42,
+    "enemyTier": 20.1,
     "trapDurability": 17.49,
     "trapSaturation": -18
   },
@@ -124,11 +124,11 @@ window.AI_STRATEGY={
     "generations": 8,
     "population": 12,
     "runsPerCandidate": 8,
-    "mutationRate": 0.25,
-    "mutationStep": 2,
-    "averageDays": 3.88,
+    "mutationRate": 0.1,
+    "mutationStep": 0.6,
+    "averageDays": 4,
     "minDays": 3,
     "maxDays": 5,
-    "fitness": 438.13
+    "fitness": 449.61
   }
 };
