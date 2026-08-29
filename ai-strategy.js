@@ -4,7 +4,7 @@
  */
 window.AI_STRATEGY={
   "version": "3.0.5",
-  "description": "时间规划规则第 3 代冠军：适应度 467.3，平均生存 4.3 天",
+  "description": "时间规划规则第 7 代冠军：适应度 467.3，平均生存 4.3 天",
   "policySchema": 3,
   "gameRulesVersion": "critical-survival-v8",
   "requiresRetraining": false,
@@ -70,13 +70,13 @@ window.AI_STRATEGY={
     "tideLead": 19.75,
     "growthPotential": 13.38,
     "foodReserve": 11.11,
-    "clothingGap": 20.25,
+    "clothingGap": 20.32,
     "durabilityRisk": 17.61,
     "seasonDanger": 14.66,
     "worldProgress": 17.28,
-    "enemyTier": 21.93,
+    "enemyTier": 22.29,
     "trapDurability": 17.5,
-    "trapSaturation": -18.06
+    "trapSaturation": -17.56
   },
   "actionWeights": {
     "attack": 41.97,
@@ -91,9 +91,9 @@ window.AI_STRATEGY={
     "sow": 14.27,
     "makeSeeds": 8,
     "evacuate": 28.33,
-    "seekHome": 23.45,
-    "upgradeWall": 12,
-    "upgradeItem": 8.06,
+    "seekHome": 24,
+    "upgradeWall": 11.41,
+    "upgradeItem": 7.48,
     "upgradeTrap": 14,
     "gather": 16.54,
     "fish": 9.28,
@@ -113,11 +113,11 @@ window.AI_STRATEGY={
     "craft:fridge": 6.86,
     "craft:bed": 8.07,
     "craft:bridge": 7.38,
-    "craft:boat": 7.94,
+    "craft:boat": 8,
     "craft:hoe": 6.36,
     "craft:wateringCan": 8,
     "craft:farmPlot": 8.15,
-    "craft:storage": 9.86
+    "craft:storage": 9.94
   },
   "trainingSummary": {
     "runs": 768,
