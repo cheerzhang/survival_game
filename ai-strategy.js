@@ -4,7 +4,7 @@
  */
 window.AI_STRATEGY={
   "version": "3.0.5",
-  "description": "时间规划规则第 7 代冠军：适应度 467.3，平均生存 4.3 天",
+  "description": "时间规划规则第 2 代冠军：适应度 458.5，平均生存 4.1 天",
   "policySchema": 3,
   "gameRulesVersion": "critical-survival-v8",
   "requiresRetraining": false,
@@ -58,25 +58,25 @@ window.AI_STRATEGY={
     "hunger": 32,
     "health": 34.65,
     "criticalHealth": 45.92,
-    "dying": 68,
+    "dying": 60,
     "threat": 37.82,
     "tide": 30.95,
     "weather": 24.57,
-    "future": 14.48,
+    "future": 14.61,
     "yield": 11,
     "distance": -4.09,
     "seasonProgress": 10,
     "seasonLead": 18,
     "tideLead": 19.75,
     "growthPotential": 13.38,
-    "foodReserve": 11.11,
+    "foodReserve": 11.19,
     "clothingGap": 20.32,
     "durabilityRisk": 17.61,
     "seasonDanger": 14.66,
     "worldProgress": 17.28,
     "enemyTier": 22.29,
     "trapDurability": 17.5,
-    "trapSaturation": -17.56
+    "trapSaturation": -18.06
   },
   "actionWeights": {
     "attack": 41.97,
@@ -92,8 +92,8 @@ window.AI_STRATEGY={
     "makeSeeds": 8,
     "evacuate": 28.33,
     "seekHome": 24,
-    "upgradeWall": 11.41,
-    "upgradeItem": 7.48,
+    "upgradeWall": 12,
+    "upgradeItem": 8.06,
     "upgradeTrap": 14,
     "gather": 16.54,
     "fish": 9.28,
@@ -126,9 +126,9 @@ window.AI_STRATEGY={
     "runsPerCandidate": 8,
     "mutationRate": 0.1,
     "mutationStep": 0.6,
-    "averageDays": 4.25,
+    "averageDays": 4.13,
     "minDays": 3,
-    "maxDays": 8,
-    "fitness": 467.25
+    "maxDays": 7,
+    "fitness": 458.51
   }
 };
