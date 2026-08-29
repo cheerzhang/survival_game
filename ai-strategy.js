@@ -4,7 +4,7 @@
  */
 window.AI_STRATEGY={
   "version": "3.0.1",
-  "description": "时间规划规则第 3 代冠军：适应度 414.1，平均生存 3.6 天",
+  "description": "时间规划规则第 1 代冠军：适应度 427.1，平均生存 3.8 天",
   "policySchema": 3,
   "gameRulesVersion": "critical-survival-v10",
   "requiresRetraining": false,
@@ -54,7 +54,7 @@ window.AI_STRATEGY={
     "storage"
   ],
   "featureWeights": {
-    "urgency": 37.01,
+    "urgency": 37.3,
     "hunger": 32,
     "health": 34,
     "criticalHealth": 46,
@@ -69,14 +69,14 @@ window.AI_STRATEGY={
     "seasonLead": 17.2,
     "tideLead": 20,
     "growthPotential": 13.63,
-    "foodReserve": 10,
+    "foodReserve": 10.3,
     "clothingGap": 22,
     "durabilityRisk": 18,
     "seasonDanger": 15.4,
     "worldProgress": 16,
     "enemyTier": 22,
     "trapDurability": 18,
-    "trapSaturation": -17.46
+    "trapSaturation": -17.01
   },
   "actionWeights": {
     "attack": 42,
@@ -85,7 +85,7 @@ window.AI_STRATEGY={
     "eatBerry": 12,
     "cook": 18,
     "sleep": 14,
-    "repairBridge": 12,
+    "repairBridge": 12.49,
     "repairWall": 15,
     "harvest": 24,
     "water": 16,
@@ -106,7 +106,7 @@ window.AI_STRATEGY={
     "craft:spear": 8,
     "craft:strongSpear": 9.04,
     "craft:hunterSpear": 8,
-    "craft:trap": 8.32,
+    "craft:trap": 8.4,
     "craft:rod": 7.68,
     "craft:fence": 8,
     "craft:door": 8,
@@ -125,11 +125,11 @@ window.AI_STRATEGY={
     "generations": 5,
     "population": 8,
     "runsPerCandidate": 8,
-    "mutationRate": 0.18,
-    "mutationStep": 1.2,
-    "averageDays": 3.63,
+    "mutationRate": 0.1,
+    "mutationStep": 0.6,
+    "averageDays": 3.75,
     "minDays": 3,
     "maxDays": 5,
-    "fitness": 414.15
+    "fitness": 427.06
   }
 };
