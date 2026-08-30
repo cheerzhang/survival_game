@@ -4,7 +4,7 @@
  */
 window.AI_STRATEGY={
   "version": "3.0.5",
-  "description": "时间规划规则第 5 代冠军：适应度 605.6，平均生存 5.6 天",
+  "description": "时间规划规则第 3 代冠军：适应度 636.8，平均生存 6.0 天",
   "policySchema": 3,
   "gameRulesVersion": "critical-survival-v10",
   "requiresRetraining": false,
@@ -76,7 +76,7 @@ window.AI_STRATEGY={
     "worldProgress": -38.84,
     "enemyTier": 20.26,
     "trapDurability": 16.26,
-    "trapSaturation": -15.66
+    "trapSaturation": -15.89
   },
   "actionWeights": {
     "attack": 25.61,
@@ -108,7 +108,7 @@ window.AI_STRATEGY={
     "craft:hunterSpear": 6.84,
     "craft:trap": 29.25,
     "craft:rod": 1.83,
-    "craft:fence": -20.18,
+    "craft:fence": -19.79,
     "craft:door": 6.4,
     "craft:kitchen": 8.39,
     "craft:fridge": 7.78,
@@ -125,11 +125,11 @@ window.AI_STRATEGY={
     "generations": 5,
     "population": 8,
     "runsPerCandidate": 8,
-    "mutationRate": 0.18,
-    "mutationStep": 1.2,
-    "averageDays": 5.63,
+    "mutationRate": 0.1,
+    "mutationStep": 0.6,
+    "averageDays": 6,
     "minDays": 3,
-    "maxDays": 8,
-    "fitness": 605.6
+    "maxDays": 10,
+    "fitness": 636.76
   }
 };
