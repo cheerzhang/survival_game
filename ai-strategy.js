@@ -4,7 +4,7 @@
  */
 window.AI_STRATEGY={
   "version": "3.0.8",
-  "description": "时间规划规则第 4 代冠军：适应度 851.5，平均生存 8.4 天",
+  "description": "时间规划规则第 5 代冠军：适应度 928.2，平均生存 9.3 天",
   "policySchema": 3,
   "gameRulesVersion": "critical-survival-v10",
   "requiresRetraining": false,
@@ -54,17 +54,17 @@ window.AI_STRATEGY={
     "storage"
   ],
   "featureWeights": {
-    "urgency": 37.43,
+    "urgency": 37.79,
     "hunger": 33.14,
     "health": 34.96,
-    "criticalHealth": 45.45,
+    "criticalHealth": 45.49,
     "dying": 58.94,
     "threat": 36.58,
     "tide": -7.45,
-    "weather": -27.89,
+    "weather": -27.46,
     "future": -12.06,
     "yield": -5.73,
-    "distance": -3.71,
+    "distance": -3.83,
     "seasonProgress": 19.27,
     "seasonLead": -14.98,
     "tideLead": -7.39,
@@ -85,7 +85,7 @@ window.AI_STRATEGY={
     "eatBerry": 10.61,
     "cook": 19.91,
     "sleep": 0.41,
-    "repairBridge": -0.97,
+    "repairBridge": -0.44,
     "repairWall": -7.64,
     "harvest": 19.9,
     "water": -29.39,
@@ -97,10 +97,10 @@ window.AI_STRATEGY={
     "upgradeItem": 13.95,
     "upgradeTrap": 1.89,
     "gather": 26.6,
-    "fish": 9.98,
+    "fish": 9.87,
     "waitGrowth": -4.64,
     "prepareClothing": -13.45,
-    "craft:warmCoat": 6.86,
+    "craft:warmCoat": 7.2,
     "craft:coolClothes": 18.08,
     "craft:rainCoat": 6.77,
     "craft:spear": 26.82,
@@ -127,9 +127,9 @@ window.AI_STRATEGY={
     "runsPerCandidate": 8,
     "mutationRate": 0.1,
     "mutationStep": 0.6,
-    "averageDays": 8.38,
-    "minDays": 4,
-    "maxDays": 22,
-    "fitness": 851.52
+    "averageDays": 9.25,
+    "minDays": 3,
+    "maxDays": 17,
+    "fitness": 928.16
   }
 };
