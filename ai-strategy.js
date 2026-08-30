@@ -3,8 +3,8 @@
  * 本地自动进化写入全部状态权重与动作权重；commit并push后由GitHub Pages发布。
  */
 window.AI_STRATEGY={
-  "version": "3.0.5",
-  "description": "时间规划规则第 2 代冠军：适应度 649.7，平均生存 6.1 天",
+  "version": "3.0.6",
+  "description": "时间规划规则第 4 代冠军：适应度 662.8，平均生存 6.3 天",
   "policySchema": 3,
   "gameRulesVersion": "critical-survival-v10",
   "requiresRetraining": false,
@@ -57,17 +57,17 @@ window.AI_STRATEGY={
     "urgency": 37.43,
     "hunger": 33.14,
     "health": 34.96,
-    "criticalHealth": 46.63,
+    "criticalHealth": 45.45,
     "dying": 58.94,
     "threat": 36.58,
-    "tide": -8.45,
+    "tide": -7.45,
     "weather": -28.44,
     "future": -11.53,
-    "yield": -5.43,
+    "yield": -5.73,
     "distance": -3.71,
     "seasonProgress": 19.47,
     "seasonLead": -14.98,
-    "tideLead": -7.65,
+    "tideLead": -7.39,
     "growthPotential": -34.86,
     "foodReserve": 11.4,
     "clothingGap": 10.83,
@@ -75,8 +75,8 @@ window.AI_STRATEGY={
     "seasonDanger": -23.12,
     "worldProgress": -38.84,
     "enemyTier": 20.26,
-    "trapDurability": 15.69,
-    "trapSaturation": -15.89
+    "trapDurability": 16.2,
+    "trapSaturation": -16.13
   },
   "actionWeights": {
     "attack": 25.67,
@@ -88,11 +88,11 @@ window.AI_STRATEGY={
     "repairBridge": -2.04,
     "repairWall": -7.64,
     "harvest": 19.9,
-    "water": -28.71,
+    "water": -29.39,
     "sow": 1.37,
     "makeSeeds": -25.83,
     "evacuate": 14.39,
-    "seekHome": 27.3,
+    "seekHome": 27.28,
     "upgradeWall": 1.16,
     "upgradeItem": 13.95,
     "upgradeTrap": 1.89,
@@ -110,26 +110,26 @@ window.AI_STRATEGY={
     "craft:rod": 1.83,
     "craft:fence": -19.79,
     "craft:door": 6.4,
-    "craft:kitchen": 8.39,
+    "craft:kitchen": 8.33,
     "craft:fridge": 7.78,
     "craft:bed": -5.51,
     "craft:bridge": 6.28,
     "craft:boat": -19.94,
     "craft:hoe": 8.48,
     "craft:wateringCan": 9.15,
-    "craft:farmPlot": 15.55,
-    "craft:storage": 7
+    "craft:farmPlot": 15.14,
+    "craft:storage": 7.74
   },
   "trainingSummary": {
     "runs": 320,
     "generations": 5,
     "population": 8,
     "runsPerCandidate": 8,
-    "mutationRate": 0.1,
-    "mutationStep": 0.6,
-    "averageDays": 6.13,
+    "mutationRate": 0.18,
+    "mutationStep": 1.2,
+    "averageDays": 6.25,
     "minDays": 3,
     "maxDays": 10,
-    "fitness": 649.7
+    "fitness": 662.75
   }
 };
