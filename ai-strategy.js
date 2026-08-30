@@ -3,8 +3,8 @@
  * 本地自动进化写入全部状态权重与动作权重；commit并push后由GitHub Pages发布。
  */
 window.AI_STRATEGY={
-  "version": "3.0.7",
-  "description": "时间规划规则第 4 代冠军：适应度 816.1，平均生存 7.9 天",
+  "version": "3.0.8",
+  "description": "时间规划规则第 4 代冠军：适应度 851.5，平均生存 8.4 天",
   "policySchema": 3,
   "gameRulesVersion": "critical-survival-v10",
   "requiresRetraining": false,
@@ -125,11 +125,11 @@ window.AI_STRATEGY={
     "generations": 5,
     "population": 8,
     "runsPerCandidate": 8,
-    "mutationRate": 0.18,
-    "mutationStep": 1.2,
-    "averageDays": 7.88,
+    "mutationRate": 0.1,
+    "mutationStep": 0.6,
+    "averageDays": 8.38,
     "minDays": 4,
-    "maxDays": 17,
-    "fitness": 816.08
+    "maxDays": 22,
+    "fitness": 851.52
   }
 };
