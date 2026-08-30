@@ -3,8 +3,8 @@
  * 本地自动进化写入全部状态权重与动作权重；commit并push后由GitHub Pages发布。
  */
 window.AI_STRATEGY={
-  "version": "3.0.6",
-  "description": "时间规划规则第 4 代冠军：适应度 662.8，平均生存 6.3 天",
+  "version": "3.0.7",
+  "description": "时间规划规则第 4 代冠军：适应度 816.1，平均生存 7.9 天",
   "policySchema": 3,
   "gameRulesVersion": "critical-survival-v10",
   "requiresRetraining": false,
@@ -61,11 +61,11 @@ window.AI_STRATEGY={
     "dying": 58.94,
     "threat": 36.58,
     "tide": -7.45,
-    "weather": -28.44,
-    "future": -11.53,
+    "weather": -27.89,
+    "future": -12.06,
     "yield": -5.73,
     "distance": -3.71,
-    "seasonProgress": 19.47,
+    "seasonProgress": 19.27,
     "seasonLead": -14.98,
     "tideLead": -7.39,
     "growthPotential": -34.86,
@@ -74,9 +74,9 @@ window.AI_STRATEGY={
     "durabilityRisk": -31.96,
     "seasonDanger": -23.12,
     "worldProgress": -38.84,
-    "enemyTier": 20.26,
-    "trapDurability": 16.2,
-    "trapSaturation": -16.13
+    "enemyTier": 19.2,
+    "trapDurability": 15.69,
+    "trapSaturation": -15.89
   },
   "actionWeights": {
     "attack": 25.67,
@@ -85,11 +85,11 @@ window.AI_STRATEGY={
     "eatBerry": 10.61,
     "cook": 19.91,
     "sleep": 0.41,
-    "repairBridge": -2.04,
+    "repairBridge": -0.97,
     "repairWall": -7.64,
     "harvest": 19.9,
     "water": -29.39,
-    "sow": 1.37,
+    "sow": 2.08,
     "makeSeeds": -25.83,
     "evacuate": 14.39,
     "seekHome": 27.28,
@@ -106,18 +106,18 @@ window.AI_STRATEGY={
     "craft:spear": 26.82,
     "craft:strongSpear": 7.32,
     "craft:hunterSpear": 6.84,
-    "craft:trap": 29.25,
+    "craft:trap": 30.42,
     "craft:rod": 1.83,
     "craft:fence": -19.79,
     "craft:door": 6.4,
     "craft:kitchen": 8.33,
-    "craft:fridge": 7.78,
-    "craft:bed": -5.51,
+    "craft:fridge": 9.21,
+    "craft:bed": -5.09,
     "craft:bridge": 6.28,
     "craft:boat": -19.94,
-    "craft:hoe": 8.48,
+    "craft:hoe": -26.2,
     "craft:wateringCan": 9.15,
-    "craft:farmPlot": 15.14,
+    "craft:farmPlot": 5.64,
     "craft:storage": 7.74
   },
   "trainingSummary": {
@@ -127,9 +127,9 @@ window.AI_STRATEGY={
     "runsPerCandidate": 8,
     "mutationRate": 0.18,
     "mutationStep": 1.2,
-    "averageDays": 6.25,
-    "minDays": 3,
-    "maxDays": 10,
-    "fitness": 662.75
+    "averageDays": 7.88,
+    "minDays": 4,
+    "maxDays": 17,
+    "fitness": 816.08
   }
 };
