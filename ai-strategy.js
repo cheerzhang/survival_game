@@ -3,8 +3,8 @@
  * 本地自动进化写入全部状态权重与动作权重；commit并push后由GitHub Pages发布。
  */
 window.AI_STRATEGY={
-  "version": "3.0.1",
-  "description": "时间规划规则第 1 代冠军：适应度 427.1，平均生存 3.8 天",
+  "version": "3.0.2",
+  "description": "时间规划规则第 4 代冠军：适应度 438.1，平均生存 3.9 天",
   "policySchema": 3,
   "gameRulesVersion": "critical-survival-v10",
   "requiresRetraining": false,
@@ -66,15 +66,15 @@ window.AI_STRATEGY={
     "yield": 12,
     "distance": -2.2,
     "seasonProgress": 10,
-    "seasonLead": 17.2,
-    "tideLead": 20,
+    "seasonLead": 16.68,
+    "tideLead": 20.19,
     "growthPotential": 13.63,
-    "foodReserve": 10.3,
+    "foodReserve": 10.53,
     "clothingGap": 22,
     "durabilityRisk": 18,
     "seasonDanger": 15.4,
-    "worldProgress": 16,
-    "enemyTier": 22,
+    "worldProgress": 15.67,
+    "enemyTier": 22.46,
     "trapDurability": 18,
     "trapSaturation": -17.01
   },
@@ -84,7 +84,7 @@ window.AI_STRATEGY={
     "eatMeal": 20,
     "eatBerry": 12,
     "cook": 18,
-    "sleep": 14,
+    "sleep": 13.8,
     "repairBridge": 12.49,
     "repairWall": 15,
     "harvest": 24,
@@ -108,12 +108,12 @@ window.AI_STRATEGY={
     "craft:hunterSpear": 8,
     "craft:trap": 8.4,
     "craft:rod": 7.68,
-    "craft:fence": 8,
-    "craft:door": 8,
+    "craft:fence": 8.48,
+    "craft:door": 7.93,
     "craft:kitchen": 8,
     "craft:fridge": 8,
     "craft:bed": 8,
-    "craft:bridge": 8,
+    "craft:bridge": 8.5,
     "craft:boat": 8,
     "craft:hoe": 8,
     "craft:wateringCan": 8,
@@ -127,9 +127,9 @@ window.AI_STRATEGY={
     "runsPerCandidate": 8,
     "mutationRate": 0.1,
     "mutationStep": 0.6,
-    "averageDays": 3.75,
+    "averageDays": 3.88,
     "minDays": 3,
     "maxDays": 5,
-    "fitness": 427.06
+    "fitness": 438.13
   }
 };
